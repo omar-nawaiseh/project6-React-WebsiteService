@@ -22,6 +22,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
+  margin: 10%;
 }
 
 .card {
@@ -71,7 +72,7 @@ img {
 .card__svg {
   position: absolute;
   left: 0;
-  top: 215px;
+  top: 150px;
 }
 
 @-webkit-keyframes LineFadeIn {

@@ -1,16 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Team_card from './Componants/Team_card';
 import Youtube from './Componants/youtube';
 import './Css/youtube.css';
 import reportWebVitals from './reportWebVitals';
+import Header from './Componants/header';
+import Footer from './Componants/footer';
+import Slider from './Componants/slider';
+import CardInformation from './Componants/Team_card'
+import Team from './Componants/Team';
+
+
+const InfUser = Team.map(x => <CardInformation name={x.name} image={x.image} specialty={x.specialty} summary={x.summary} />)
+
+
+function Cards() {
+  return (
+    <div className="contener">
+      {InfUser}
+    </div>
+  )
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
+    <Slider />
     <Youtube />
-    <Team_card />
-
+    <Cards />
+    <Footer />
 
 
     

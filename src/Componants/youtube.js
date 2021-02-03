@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import YouTube from 'react-youtube';
 
-import '../CSS/youtube.css';
+import '../Css/youtube.css';
 
 //https://youtu.be/pRTWFqhEDeo
 

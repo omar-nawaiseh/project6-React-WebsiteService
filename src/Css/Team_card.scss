@@ -14,6 +14,7 @@ img {
   justify-content: center;
   flex-wrap: wrap ;
   height: 100vh;
+  margin: 10%;
 }
 
 .card {
@@ -58,7 +59,7 @@ img {
   &__svg {
     position: absolute;
     left: 0;
-    top: 215px;
+    top: 150px;
   }
 }
 
