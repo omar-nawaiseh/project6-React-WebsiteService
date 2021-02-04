@@ -2,33 +2,25 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 100vh;
-  margin: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 1em;
 }
 
 .card {
   position: relative;
   background: #333;
-  width: 300px;
+  width: 400px;
   height: 75vh;
   border-radius: 6px;
   padding: 2rem;
@@ -36,7 +28,6 @@ img {
   -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 10px;
 }
 
 .card__image-container {
@@ -45,14 +36,14 @@ img {
 
 .card__line {
   opacity: 0;
-  -webkit-animation: LineFadeIn .8s .8s forwards ease-in;
-          animation: LineFadeIn .8s .8s forwards ease-in;
+  -webkit-animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+          animation: LineFadeIn 0.8s 0.8s forwards ease-in;
 }
 
 .card__image {
   opacity: 0;
-  -webkit-animation: ImageFadeIn .8s 1.4s forwards;
-          animation: ImageFadeIn .8s 1.4s forwards;
+  -webkit-animation: ImageFadeIn 0.8s 1.4s forwards;
+          animation: ImageFadeIn 0.8s 1.4s forwards;
 }
 
 .card__title {
@@ -65,14 +56,14 @@ img {
 .card__content {
   margin-top: -1rem;
   opacity: 0;
-  -webkit-animation: ContentFadeIn .8s 1.6s forwards;
-          animation: ContentFadeIn .8s 1.6s forwards;
+  -webkit-animation: ContentFadeIn 0.8s 1.6s forwards;
+          animation: ContentFadeIn 0.8s 1.6s forwards;
 }
 
 .card__svg {
   position: absolute;
   left: 0;
-  top: 150px;
+  top: 115px;
 }
 
 @-webkit-keyframes LineFadeIn {
@@ -84,7 +75,7 @@ img {
   50% {
     opacity: 1;
     d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
-    stroke: #888BFF;
+    stroke: #888bff;
   }
   100% {
     opacity: 1;
@@ -102,7 +93,7 @@ img {
   50% {
     opacity: 1;
     d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
-    stroke: #888BFF;
+    stroke: #888bff;
   }
   100% {
     opacity: 1;

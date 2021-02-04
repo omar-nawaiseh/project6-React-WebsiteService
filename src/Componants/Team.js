@@ -2,7 +2,7 @@ const Team = [
     {
         id: 1,
         name: "Sadi Ashlaq",
-        image: '/Images/Sadi.jpg',
+        image: '../Images/Sadi.jpg',
         summary: "Full Stack Developer",
         
     },

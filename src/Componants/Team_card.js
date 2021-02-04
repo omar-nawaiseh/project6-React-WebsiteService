@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 
 function Person(props) {
   return (
-    <div>
+   
     <div className="container ">
 <div>
 <div className="card">
@@ -22,7 +22,9 @@ function Person(props) {
 </div>
 </div>
 </div> 
-</div>
+
+
+
   );
 } 
 export default Person;

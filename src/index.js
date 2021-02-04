@@ -9,6 +9,8 @@ import Footer from './Componants/footer';
 import Slider from './Componants/slider';
 import CardInformation from './Componants/Team_card'
 import Team from './Componants/Team';
+import Product from './Componants/Product';
+
 
 
 const InfUser = Team.map(x => <CardInformation name={x.name} image={x.image} specialty={x.specialty} summary={x.summary} />)
@@ -28,7 +30,8 @@ ReactDOM.render(
     <Header />
     <Slider />
     <Youtube />
-    <Cards />
+    {/* <Cards /> */}
+    <Product />
     <Footer />
 
 
