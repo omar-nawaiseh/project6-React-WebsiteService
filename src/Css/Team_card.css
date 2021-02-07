@@ -3,6 +3,7 @@ body {
   font-family: "Sriracha";
 }
 
+<<<<<<< HEAD
 /*
 .testimonials {
   margin-top: 40px;
@@ -35,6 +36,38 @@ body {
   background: #fff;
   padding: 3px;
   border: 1px solid #c5c5c5;
+=======
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: #333;
+  width: 250px;
+  height: 65vh;
+  border-radius: 6px;
+  padding: 2rem;
+  color: #aaa;
+  -webkit-box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+>>>>>>> 29586250586f3f2182f42862fff75baeb2dc8b95
 }
 
 .avatar img {
@@ -50,8 +83,16 @@ body {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 .testimonial h4 {
   margin-bottom: 8px;
+=======
+.card__title {
+  color: white;
+  margin-top: 0;
+  font-weight: 150;
+  letter-spacing: -0.05em;
+>>>>>>> 29586250586f3f2182f42862fff75baeb2dc8b95
 }
 
 .testimonial .testimony-body {
@@ -77,6 +118,7 @@ body {
 .testimonial:before {
   content: "";
   position: absolute;
+<<<<<<< HEAD
   z-index: -1;
   -ms-transform: skew(-3deg, -2deg);
   -webkit-transform: skew(-3deg, -2deg);
@@ -88,6 +130,10 @@ body {
   width: 90%;
   height: 50px;
   left: 1px;
+=======
+  left: 0;
+  top: 115px;
+>>>>>>> 29586250586f3f2182f42862fff75baeb2dc8b95
 }
 
 .avatar .img-circle {
