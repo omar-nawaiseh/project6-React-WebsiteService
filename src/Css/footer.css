@@ -23,8 +23,11 @@
   padding: 55px 50px;
   margin-top: 80px;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* .footer-distributed .footer-left,
@@ -198,17 +201,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .footer-distributed {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+  /* .footer-distributed {
+    display: flex;
+  } */
 }
 
 @media only screen and (max-width: 600px) {
   .footer-distributed {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+    display: flex;
+    margin-top: 600px;
+    flex-direction: column;
     width: 600px;
   }
 
@@ -221,10 +223,12 @@
 
 @media only screen and (max-width: 500px) {
   .footer-distributed {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+
+    flex-direction: column;
     text-align: center;
     width: 500px;
+    margin-top: 300px;
   }
 
   .footer-distributed .footer-left,
@@ -236,9 +240,10 @@
 
 @media only screen and (max-width: 320px) {
   .footer-distributed {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+    margin-top: 600px;
   }
 
   .footer-distributed .footer-left,

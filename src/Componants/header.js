@@ -1,17 +1,59 @@
 import React, { Component } from 'react'
+import {Link ,NavLink} from 'react-router-dom'
 import '../Css/header.css'
 
+
+
+
+const jsonObj = JSON.parse(localStorage.getItem('user'));
+const listobj = JSON.parse(localStorage.getItem('list'));
  class Header extends Component {
+
+
+
+  // obj = {
+
+  //   email: this.state.email,
+  //   password: this.state.password
+  // }
+  logout =()=>{
+    localStorage.removeItem("user");
+    localStorage.removeItem("list");
+  }
+
+
   render() {
+   
     return (
-      <ul>
-        
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">Service</a></li>
-      <li><a href="#contact">About</a></li>
-      <li><a href="#about">Login</a></li>
-      <li><a href="#about">Register</a></li>
-    </ul>
+
+
+
+<nav className="navbar">
+<Link to ="/"><img className = "logo" src="../Images/Marley.png"/></Link>
+  
+
+<ul className="nav-links">
+<li className="nav-item">< Link to="/Services">Services</Link></li>
+
+
+{jsonObj ? <> <li className="nav-item">< Link  to="/Profile">Profile</Link></li>
+  <li className="nav-item" onClick = {this.logout}>< Link  to="/">logout</Link></li></>
+:  
+ 
+  <><li className="nav-item">< Link to="/Login">Login</Link></li>
+<li className="nav-item">< Link  to="/Register">Register</Link></li></> } 
+
+{/* {!jsonObj ? null 
+:  <><li className="nav-item">< Link to="/Login">Login</Link></li>
+<li className="nav-item">< Link  to="/Register">Register</Link></li></>
+ 
+   }  */}
+ 
+
+  
+</ul>
+</nav>
+  
     )
   }
 }

@@ -19,7 +19,7 @@ export default class Youtube extends Component {
   }
 
 render() {
-
+ 
     const opts = {
 
       height: '390',
@@ -39,11 +39,11 @@ render() {
     return (
 
      <div className = "player">
+       <h1 className="youtuob">Tips For You</h1>
 
-    <YouTube videoId="pRTWFqhEDeo" opts={opts} onReady={this._onReady} />
+    <YouTube videoId="b9VoZ8U7owk" opts={opts} onReady={this._onReady} />
 
      </div>
-  
 
     );
 

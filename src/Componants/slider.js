@@ -1,52 +1,48 @@
 import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel,Item } from 'react-bootstrap';
+import '../Css/slider.css'
 
  class Slider extends Component {
   render() {
     return (
-        <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://www.ris.world/wp-content/uploads/2019/10/Why-ISO-standards-are-crucial-for-organic-and-natural-transparency-CFTAS-president_wrbm_large.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.ris.world/wp-content/uploads/2019/10/Why-ISO-standards-are-crucial-for-organic-and-natural-transparency-CFTAS-president_wrbm_large.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="https://www.ris.world/wp-content/uploads/2019/10/Why-ISO-standards-are-crucial-for-organic-and-natural-transparency-CFTAS-president_wrbm_large.jpg" class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+    
+      <Carousel>
+  <Carousel.Item interval={5000}>
+    <img
+      className="d-block w-100"
+      src="./Images/Home-2-Slider-3.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h1 className="slider">Let's Go Marley website</h1>
+      <p className="para">Think before you speak.Read before you think</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={5000}>
+    <img
+      className="d-block w-100"
+      src="./Images/Home-2-Slider-1.jpg"
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h3 className="slider">Hurry Up ,20% DisCount</h3>
+      <p className="para">Free delivery  Just For one week</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  {/* <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="http://storage.googleapis.com/alquds-cdn/images/1558423300537953800/1558423314000/700x414.jpg"
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item> */}
+  
+</Carousel> 
     )
   }
 }
